@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <LDProgressView/LDProgressView.h>
+
 
 @interface GoalCell : UITableViewCell
+
+@property (weak,nonatomic)IBOutlet UILabel *goalTitle;
+@property (weak,nonatomic)IBOutlet UIImageView *goalBackground;
+@property (weak, nonatomic) IBOutlet UIView *gradientView;
+@property (strong, nonatomic) LDProgressView *dailyProgressView;
+@property (strong, nonatomic) LDProgressView *allTimeProgressView;
+@property (nonatomic) CGFloat *dailyValue;
+@property (nonatomic) float *allTimeValue;
 
 @end

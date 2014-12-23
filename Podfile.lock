@@ -1,0 +1,19 @@
+PODS:
+  - FXBlurView (1.6.3)
+  - iOS7Colors (2.0.0)
+  - LDProgressView (1.2.1)
+  - ParallaxBlur (0.1.4):
+    - FXBlurView (~> 1.6.2)
+
+DEPENDENCIES:
+  - iOS7Colors (~> 2.0.0)
+  - LDProgressView (>= 1.1)
+  - ParallaxBlur
+
+SPEC CHECKSUMS:
+  FXBlurView: abe1046285813c4f6e9008abbc324fc5ab32af90
+  iOS7Colors: 38fd2461757b55f44cde3fcb1667fdedd8470e0c
+  LDProgressView: e0ee70a7cd858ac8c04b319ef87854e7250fb357
+  ParallaxBlur: 149ea077dec9264fc12bc04490cd05ff0e170e1d
+
+COCOAPODS: 0.34.4
