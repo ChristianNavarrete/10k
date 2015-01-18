@@ -8,6 +8,7 @@
 
 #import "JPBParallaxTableViewController.h"
 
+
 @interface JPBParallaxTableViewController (){
     UITableView *_tableView;
 }
@@ -30,9 +31,11 @@
     return _tableView;
 }
 
+
 - (UIScrollView *)contentView{
     return [self tableView];
 }
+
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"Cell"];

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <LDProgressView/LDProgressView.h>
+#import "GoalEntry.h"
 
 
 @interface GoalCell : UITableViewCell
@@ -17,7 +18,11 @@
 @property (weak, nonatomic) IBOutlet UIView *gradientView;
 @property (strong, nonatomic) LDProgressView *dailyProgressView;
 @property (strong, nonatomic) LDProgressView *allTimeProgressView;
-@property (nonatomic) CGFloat *dailyValue;
-@property (nonatomic) float *allTimeValue;
+@property (nonatomic) float dailyValue;
+@property (nonatomic) float allTimeValue;
+
++ (CGFloat)heightForEntry:(GoalEntry *)entry;
+
+- (void)configureCellForEntry:(GoalEntry *)entry;
 
 @end

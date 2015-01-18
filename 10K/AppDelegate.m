@@ -18,13 +18,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [[UINavigationBar appearance] setBarTintColor:[UIColor blackColor]];
-    [[UINavigationBar appearance] setTintColor:[UIColor iOS7darkGrayColor]];
-    [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:
-                                                          [UIFont fontWithName:@"mplus-1c-regular" size:21],
-                                                          NSFontAttributeName, nil]];
+    UINavigationBar *navigationBarAppearance = [UINavigationBar appearance];
+    navigationBarAppearance.barTintColor = [UIColor colorWithRed:129.0/255.0 green:122.0/255.0 blue:231.0/255.0 alpha:0.5f];
+    navigationBarAppearance.tintColor = [UIColor whiteColor];
+    navigationBarAppearance.titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor whiteColor]};
+    
+    
     return YES;
 }
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

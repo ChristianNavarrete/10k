@@ -17,5 +17,7 @@
 @property (nonatomic) float allTimeFloat;
 @property (nonatomic) float dailyFloat;
 @property (nonatomic) NSTimeInterval date;
+@property (nonatomic, readonly) NSString *sectionName;
+
 
 @end

@@ -24,7 +24,10 @@
     self.textField.alpha = 0.5;
     
         [super viewDidLoad];
-        
+    
+        self.navigationController.navigationBar.hidden = YES;
+
+    
         //Not affecting background music playing
         NSError *sessionError = nil;
         [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryAmbient error:&sessionError];
@@ -55,7 +58,11 @@
       
     
     }
-    
+
+//    - (BOOL)prefersStatusBarHidden {
+//    return YES;
+//    }
+
     - (void)viewWillDisappear:(BOOL)animated
     {
         [super viewWillDisappear:animated];
